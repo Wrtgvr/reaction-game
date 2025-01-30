@@ -2,7 +2,7 @@
 const targetEl = document.getElementById("target");
 const nextTargetPosEl = document.getElementById("next-target-pos");
 const startBtnEl = document.getElementById("start-test-btn");
-const testAreaHeight = document.getElementById("test-area").clientWidth;
+const testArea = document.getElementById("test-area");
 const headerHeight = document.querySelector("header").clientHeight;
 const scoreEl = document.getElementById("header__score");
 const bestScoreEl = document.getElementById("header__best-score");
@@ -40,8 +40,10 @@ function updateScoreTexts() {
     bestScoreEl.textContent = `Best score: ${bestScore}`;
 }
 function moveNextTargetPos() {
-    const newTop = random(headerHeight, testAreaHeight - headerHeight);
-    const newLeft = random(0, testAreaHeight - targetEl.offsetWidth);
+    const newTop = random(headerHeight, testArea.offsetHeight - headerHeight - targetEl.offsetHeight);
+    const newLeft = random(0, testArea.offsetWidth - targetEl.offsetWidth);
+    console.log(headerHeight);
+    console.log(testArea.offsetHeight - headerHeight - targetEl.offsetHeight);
     nextTargetPosEl.style.top = newTop + "px";
     nextTargetPosEl.style.left = newLeft + "px";
 }
