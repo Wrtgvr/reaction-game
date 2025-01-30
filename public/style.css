@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f6f6f6;
+}
+
+header {
+  background-color: #dedede;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+header > span {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+footer {
+  background-color: #a4a4a4;
+  height: 12vh;
+}
+
+.hidden {
+  visibility: hidden !important;
+  position: absolute !important;
+}
+
+main {
+  height: 82vh;
+}
+main button {
+  cursor: pointer;
+}
+main #start-test-btn {
+  position: relative;
+  width: 90px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 1.2em;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+main #test-area {
+  height: 100%;
+}
+main #test-area #target {
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  width: 10vmin;
+  aspect-ratio: 1;
+  top: 10;
+  background-color: #ef0d0d;
+  z-index: 1;
+}
+main #test-area #next-target-pos {
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  width: 10vmin;
+  aspect-ratio: 1;
+  top: 10;
+  background-color: #dc7d7d;
+}
+
+/*# sourceMappingURL=style.css.map */
