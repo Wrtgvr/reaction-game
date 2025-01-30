@@ -13,7 +13,7 @@ $footer-height: 12vh;
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: $white;
+  background-color: $light-grey;
 }
 header {
   background-color: $light-grey;
@@ -44,7 +44,7 @@ main {
   button {cursor: pointer;}
 
   #start-test-btn {
-    position: relative;
+    position: absolute;
     width: 90px;
     height: 45px;
     font-weight: 600;
@@ -52,11 +52,16 @@ main {
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
+    z-index: 1;
   }
 
   #test-area {
- 
+    position: relative;
+    background-color: $white;
+    width: 75vw;
     height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     
     @mixin target-circle {
       position: absolute;
@@ -78,3 +83,12 @@ main {
     }
   }
 }
+
+// @media screen and (width < 750) {
+//   #text-area {
+//     width: 100vw;
+//     left: 0;
+//     transform: translateX(0);
+//     background-color: red;
+//   }
+// }

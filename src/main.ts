@@ -53,10 +53,7 @@ function updateScoreTexts() {
 function moveNextTargetPos() {
   const newTop = random(headerHeight, testArea.offsetHeight - headerHeight - targetEl.offsetHeight)
   const newLeft = random(0, testArea.offsetWidth - targetEl.offsetWidth)
-
-  console.log(headerHeight) 
-  console.log(testArea.offsetHeight - headerHeight - targetEl.offsetHeight)
-
+  
   nextTargetPosEl.style.top = newTop + "px"
   nextTargetPosEl.style.left = newLeft + "px"
 }
