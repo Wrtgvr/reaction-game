@@ -72,4 +72,13 @@ main #test-area #next-target-pos {
   background-color: #dc7d7d;
 }
 
+@media screen and (width < 750) {
+  #text-area {
+    width: 100vw;
+    left: 0;
+    transform: translateX(0);
+    background-color: red;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

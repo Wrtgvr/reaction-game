@@ -84,11 +84,11 @@ main {
   }
 }
 
-// @media screen and (width < 750) {
-//   #text-area {
-//     width: 100vw;
-//     left: 0;
-//     transform: translateX(0);
-//     background-color: red;
-//   }
-// }
+@media screen and (width < 750) {
+  #text-area {
+    width: 100vw;
+    left: 0;
+    transform: translateX(0);
+    background-color: red;
+  }
+}
